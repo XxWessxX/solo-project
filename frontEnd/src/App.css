@@ -1,0 +1,311 @@
+
+.navBar{
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+    margin-left: 12%;
+    width: 1390px;
+    margin-top: 25px;
+    height:80px;
+}
+.h1{
+    color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form button {
+    border: none;
+    background: none;
+    color: #0000ff;
+  }
+  /* styling of whole input container */
+  .form {
+    --timing: 0.3s;
+    --width-of-input: 400px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #ffffff;
+    --border-color: #0c0cf6;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg,#fff);
+    margin-left: 480px;
+  }
+  /* styling of Input */
+  .input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-radius: 5px;
+  }
+  /* styling of animated border */
+  .form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+  }
+  /* Hover on Input */
+  .form:focus-within {
+    border-radius: var(--after-border-radius);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  /* here is code of animated border */
+  .form:focus-within:before {
+    transform: scale(1);
+  }
+  /* styling of close button */
+  /* == you can click the close button to remove text == */
+  .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* close button shown when typing */
+  input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* sizing svg icons */
+  .form svg {
+    width: 17px;
+    margin-top: 3px;
+  }
+
+  .card {
+    margin-left: 590px;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: 580px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+    box-shadow: 0 1px 55px rgba(0, 0, 0, 2);
+  }
+  
+  .card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 530px;
+    border-radius: 6px 6px 0 0;
+    box-shadow: 0 1px 55px rgba(0, 0, 0, 0.371);
+  }
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+  
+  .category {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-left: 230px;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+  }
+  
+  .category:hover {
+    cursor: pointer;
+  }
+  
+  .size{
+    margin-left: -90px;
+    width: 600px;
+    height: 100px;
+  }
+  .heading {
+    position: flex;
+    font-size: 25px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    color: rgb(63, 121, 230);
+  }
+  
+  .heading:hover {
+    cursor: pointer;
+  }
+  
+  .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
+
+
+  .g{
+    margin-left: 110px;
+    margin-top: -88px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .c{
+    color: #fff;
+    margin-left: 1200px;
+    margin-top: -47px;
+    cursor: pointer;
+  }
+  .e{
+    color: #fff;
+    margin-left: 1050px;
+    margin-top: -47px;
+    cursor: pointer;
+  }
+
+  .right{
+    width: 80px;
+    height: 700px;
+    background-color: rgb(50, 39, 39);
+  }
+  
+
+   .btn2 {
+    box-shadow: 0 1px 55px rgba(0, 0, 0, 0.786);
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+    margin-left: 120px;
+   }
+   
+   .btn2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 251, 3);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+   }
+   
+   .btn2:hover::before {
+    transform: translateX(0);
+   }
+
+   .btn3 {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 1px 55px rgba(0, 0, 0, 0.768);
+    color: rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+    margin-left: 30px;
+   }
+   
+   .btn3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(237, 10, 10);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+   }
+   
+   .btn3:hover::before {
+    transform: translateX(0);
+   }
+   .cardP {
+    width: 485px;
+    height: 68px;
+    background: #ffff;
+    box-shadow: 0 1px 55px rgba(0, 0, 0, 2);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 12px 10px;
+    margin-top: -235px;
+    margin-left:-13px ;
+  }
+  
+  .card_load {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    float: left;
+    background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+    40%, #e5e5e5 48%);
+    border-radius: 50%;
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    animation: load89234 2s infinite;
+  }
+  
+  .card_load_extreme_title {
+    width: 130px;
+    height: 30px;
+    position: relative;
+    float: left;
+    border-radius: 5px;
+    background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 38%, #f0f0f0 
+    40%, #ffffff 48%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    animation: load89234 2s infinite;
+  }
+  
+  @keyframes load89234 {
+    100% {
+      background-position: -100% 0;
+    }
+  }

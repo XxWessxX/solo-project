@@ -1,0 +1,96 @@
+.hey{
+    width: 850px;
+    height: 550px;
+    background-color: #ffffff;
+    margin-left: 440px;
+    margin-top: 100px;
+}
+.inputs {
+    width: 490px;
+    height: 44px;
+    background-color: #05060f27;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+    
+    margin-left: 160px;
+    margin-top: 10px;
+
+  }
+  
+  .labels1 {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #05060f99;
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+    margin-left: 160px;
+    padding-top: 50px;
+  }
+  .labels2 {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #05060f99;
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+    margin-left: 140px;
+    padding-top: 50px;
+  }
+  .labels3 {
+    display: block;
+    margin-bottom: .3rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #05060f99;
+    transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+    margin-left: 130px;
+    padding-top: 50px;
+  }
+  
+  .input:hover, .input:focus, .input-group:hover .input {
+    outline: none;
+    border-color: #05060f;
+  }
+  
+  .input-group:hover .label, .input:focus {
+    color: #05060fc2;
+  }
+  .button1 {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica,"sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #cfef00;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 640px;
+    margin-top: 40px;
+  }
+  
+  button:hover {
+    background: #c4e201;
+  }
+  
+  button > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+  }
+  
+  button:hover svg {
+    transform: translateX(5px);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  
