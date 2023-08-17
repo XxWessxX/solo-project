@@ -1,18 +1,11 @@
-
-
 import React, { useState,useEffect } from 'react';
 import axios from 'axios'
 import { Link } from 'react-router-dom';
-
-
-
+import { useNavigate } from 'react-router-dom';
 import './App.css';
 
-const Alert=()=>{
-  alert("oops it dosen't work 😂")
-}
-
 function Card() {
+  const navigate=useNavigate()
     const[data,setData]=useState([])
     const [trigger,setTrigger] = useState(false)
     useEffect(() => {
@@ -23,6 +16,12 @@ function Card() {
           console.log(err)
         })
       },[trigger])
+
+      const Alert=()=>{
+        alert("oops it dosen't work 😂");
+        navigate("/Card")
+
+      }
 
 const handleDelete= ( id ) => {
  axios.delete(`http://localhost:5471/posts/${id}`).then((result)=>{
@@ -51,7 +50,7 @@ const handleDelete= ( id ) => {
 <div class="heading">{el.Description}</div>
 </div>
 <br />
-<Link to={`Update/${el.idposts}`} class="btn2" onClick={Alert} >UPDATE</Link>
+<Link class="btn2" onClick={Alert} >UPDATE</Link>
 <a class="btn3" onClick={(e)=>{
   console.log(e);
   handleDelete(el.idposts)}}>DELETE</a>
