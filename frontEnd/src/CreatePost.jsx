@@ -10,9 +10,7 @@ const[desc,setDesc]=useState('')
 
 const navigate=useNavigate()
 
-const onChange =(e) => {
-    
-}
+
 function handleSubmit(event){
     event.preventDefault()
     axios.post('http://localhost:5471/create',{Title:title,ImageUrl:image,Description:desc}).then((res)=>{

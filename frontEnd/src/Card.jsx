@@ -8,6 +8,10 @@ import { Link } from 'react-router-dom';
 
 import './App.css';
 
+const Alert=()=>{
+  alert("oops it dosen't work 😂")
+}
+
 function Card() {
     const[data,setData]=useState([])
     const [trigger,setTrigger] = useState(false)
@@ -47,7 +51,7 @@ const handleDelete= ( id ) => {
 <div class="heading">{el.Description}</div>
 </div>
 <br />
-<Link to={`Update/${el.idposts}`} class="btn2" >UPDATE</Link>
+<Link to={`Update/${el.idposts}`} class="btn2" onClick={Alert} >UPDATE</Link>
 <a class="btn3" onClick={(e)=>{
   console.log(e);
   handleDelete(el.idposts)}}>DELETE</a>
